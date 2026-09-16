@@ -1,0 +1,7 @@
+茉莉_ctl_wash_needle.wav: dur=1.44s sr=24000 ch=1 rms=2183
+茉莉_emg_stop.wav: dur=1.12s sr=24000 ch=1 rms=1543
+苏打_emg_stop.wav: dur=207.52s sr=24000 ch=1 rms=1026
+白桦_ctl_wash_needle.wav: dur=1.44s sr=24000 ch=1 rms=2638
+白桦_ctl_stop_acq.wav: dur=1.44s sr=24000 ch=1 rms=1535
+冰糖_ctl_wash_needle.wav: dur=1.44s sr=24000 ch=1 rms=3594
+冰糖_emg_stop.wav: dur=1.28s sr=24000 ch=1 rms=3108

@@ -1,0 +1,1930 @@
+[
+ {
+  "file": "冰糖_ctl_eq_column.wav",
+  "ref": "平衡色谱柱",
+  "hyp": "平 衡 色 谱 柱",
+  "intent": "eq_column",
+  "expect": "eq_column",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_ctl_pause.wav",
+  "ref": "暂停运行",
+  "hyp": "暂 停 运 行",
+  "intent": "stop_run",
+  "expect": "stop_run",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_ctl_purge_bubble.wav",
+  "ref": "排气泡",
+  "hyp": "排 气 泡",
+  "intent": "purge_bubble",
+  "expect": "purge_bubble",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_ctl_start_acq.wav",
+  "ref": "开始数据采集",
+  "hyp": "开 始 数 据 采 集",
+  "intent": "start_acq",
+  "expect": "start_acq",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_ctl_start_inject.wav",
+  "ref": "开始进样",
+  "hyp": "开 始 进 样",
+  "intent": "start_inject",
+  "expect": "start_inject",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_ctl_stop_acq.wav",
+  "ref": "停止采集",
+  "hyp": "停 止 采 集",
+  "intent": "stop_acq",
+  "expect": "stop_acq",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_ctl_stop_run.wav",
+  "ref": "停止运行",
+  "hyp": "停 止 运 行",
+  "intent": "stop_run",
+  "expect": "stop_run",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_ctl_wash_needle.wav",
+  "ref": "洗针",
+  "hyp": "洗 针",
+  "intent": "wash_needle",
+  "expect": "wash_needle",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_dat_compare.wav",
+  "ref": "比较这两张色谱图",
+  "hyp": "比 较 这 两 张 色 谱 图",
+  "intent": "compare_chrom",
+  "expect": "compare_chrom",
+  "slots": {},
+  "ok": true,
+  "src": "pinyin_fix"
+ },
+ {
+  "file": "冰糖_dat_export.wav",
+  "ref": "导出报告",
+  "hyp": "导 出 报 告",
+  "intent": "export_report",
+  "expect": "export_report",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_dat_peak_area.wav",
+  "ref": "看看峰面积",
+  "hyp": "看 看 峰 面 积",
+  "intent": "peak_area",
+  "expect": "peak_area",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_dat_retention.wav",
+  "ref": "看一下保留时间",
+  "hyp": "看 一 下 保 留 时 间",
+  "intent": "retention_time",
+  "expect": "retention_time",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_dat_save_spec.wav",
+  "ref": "保存这张谱图",
+  "hyp": "保 存 这 张 谱 图",
+  "intent": "save_spectra",
+  "expect": "save_spectra",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_emg_cancel.wav",
+  "ref": "取消刚才的操作",
+  "hyp": "取 消 刚 才 的 操 作",
+  "intent": "cancel_op",
+  "expect": "cancel_op",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_emg_stop.wav",
+  "ref": "急停",
+  "hyp": "急 停",
+  "intent": "emergency_stop",
+  "expect": "emergency_stop",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_hlp_amount_default.wav",
+  "ref": "进样量默认是多少",
+  "hyp": "进 样 量 默 认 是 多 少",
+  "intent": "start_inject",
+  "expect": "start_inject",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_hlp_bubble.wav",
+  "ref": "怎么排气泡",
+  "hyp": "怎 么 排 气 泡",
+  "intent": "purge_bubble",
+  "expect": "purge_bubble",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_hlp_flow_max.wav",
+  "ref": "流速最大能到多少",
+  "hyp": "流 速 最 大 能 到 多 少",
+  "intent": "help_flow_max",
+  "expect": "help_flow_max",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_hlp_gradient.wav",
+  "ref": "怎么设置梯度",
+  "hyp": "怎 么 设 置 梯 度",
+  "intent": "help_gradient",
+  "expect": "help_gradient",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_mtd_load_a.wav",
+  "ref": "载入方法A",
+  "hyp": "载 入 方 法 a",
+  "intent": "load_method",
+  "expect": "load_method",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_mtd_load_program.wav",
+  "ref": "载入梯度程序",
+  "hyp": "载 入 梯 度 程 序",
+  "intent": "load_program",
+  "expect": "load_program",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_mtd_save.wav",
+  "ref": "保存当前方法",
+  "hyp": "保 存 当 前 方 法",
+  "intent": "save_method",
+  "expect": "save_method",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_mtd_set_default.wav",
+  "ref": "把这个设为默认方法",
+  "hyp": "把 这 个 设 为 默 认 方 法",
+  "intent": "set_default",
+  "expect": "set_default",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_qry_baseline.wav",
+  "ref": "基线稳定了吗",
+  "hyp": "基 线 稳 定 了 吗",
+  "intent": "query_baseline",
+  "expect": "query_baseline",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_qry_flow_now.wav",
+  "ref": "当前流速是多少",
+  "hyp": "当 前 流 速 是 多 少",
+  "intent": "query_flow",
+  "expect": "query_flow",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_qry_pressure.wav",
+  "ref": "现在压力多少",
+  "hyp": "现 在 压 力 多 少",
+  "intent": "query_pressure",
+  "expect": "query_pressure",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_qry_status.wav",
+  "ref": "系统运行状态怎么样",
+  "hyp": "系 统 运 行 状 态 怎 么 样",
+  "intent": "query_status",
+  "expect": "query_status",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_qry_step.wav",
+  "ref": "运行到哪一步了",
+  "hyp": "运 行 到 哪 一 步 了",
+  "intent": "query_step",
+  "expect": "query_step",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_qry_temp_reach.wav",
+  "ref": "柱温到了没有",
+  "hyp": "柱 温 到 了 没 有",
+  "intent": "query_temp",
+  "expect": "query_temp",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_set_amount_a_0.wav",
+  "ref": "进样量设为一百微升",
+  "hyp": "进 样 量 设 为 一 百 微 升",
+  "intent": "set_amount",
+  "expect": "set_amount",
+  "slots": {
+   "amount_ul": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_set_amount_a_1.wav",
+  "ref": "进样量设为五微升",
+  "hyp": "进 样 量 设 为 五 微 升",
+  "intent": "set_amount",
+  "expect": "set_amount",
+  "slots": {
+   "amount_ul": 5.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_set_curr_a_0.wav",
+  "ref": "抑制器电流设为五十毫安",
+  "hyp": "抑 制 器 电 流 设 为 五 十 毫 安",
+  "intent": "set_current",
+  "expect": "set_current",
+  "slots": {
+   "current_ma": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_set_curr_a_1.wav",
+  "ref": "抑制器电流设为五十毫安",
+  "hyp": "抑 制 器 电 流 设 为 五 十 毫 安",
+  "intent": "set_current",
+  "expect": "set_current",
+  "slots": {
+   "current_ma": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_set_flow_a_0.wav",
+  "ref": "流速设为三毫升每分钟",
+  "hyp": "流 速 设 为 三 毫 升 每 分 钟",
+  "intent": "set_flow",
+  "expect": "set_flow",
+  "slots": {
+   "flow": 3.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_set_flow_a_1.wav",
+  "ref": "流速设为零点五毫升每分钟",
+  "hyp": "流 速 设 为 零 点 五 毫 升 每 分 钟",
+  "intent": "set_flow",
+  "expect": "set_flow",
+  "slots": {
+   "flow": 0.5
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_set_flow_b_0.wav",
+  "ref": "把流速调到零点五毫升每分钟",
+  "hyp": "把 流 速 调 到 零 点 五 毫 升 每 分 钟",
+  "intent": "set_flow",
+  "expect": "set_flow",
+  "slots": {
+   "flow": 0.5
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_set_flow_b_1.wav",
+  "ref": "把流速调到三毫升每分钟",
+  "hyp": "把 流 速 调 到 三 毫 升 每 分 钟",
+  "intent": "set_flow",
+  "expect": "set_flow",
+  "slots": {
+   "flow": 3.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_set_press_a_0.wav",
+  "ref": "压力上限设为三十兆帕",
+  "hyp": "压 力 上 限 设 为 三 十 兆 帕",
+  "intent": "set_pressure",
+  "expect": "set_pressure",
+  "slots": {
+   "pressure_mpa": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_set_press_a_1.wav",
+  "ref": "压力上限设为二十五兆帕",
+  "hyp": "压 力 上 限 设 为 二 十 五 兆 帕",
+  "intent": "set_pressure",
+  "expect": "set_pressure",
+  "slots": {
+   "pressure_mpa": 5.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_set_temp_a_0.wav",
+  "ref": "柱温四十度",
+  "hyp": "柱 温 四 十 度",
+  "intent": "set_temp",
+  "expect": "set_temp",
+  "slots": {
+   "temp": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_set_temp_a_1.wav",
+  "ref": "柱温三十五度",
+  "hyp": "柱 温 三 十 五 度",
+  "intent": "set_temp",
+  "expect": "set_temp",
+  "slots": {
+   "temp": 5.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_set_temp_b_0.wav",
+  "ref": "把柱温箱温度设到三十五摄氏度",
+  "hyp": "把 柱 温 箱 温 度 设 到 三 十 五 摄 氏 度",
+  "intent": "set_temp2",
+  "expect": "set_temp2",
+  "slots": {
+   "temp": 35.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_set_temp_b_1.wav",
+  "ref": "把柱温箱温度设到三十五摄氏度",
+  "hyp": "把 柱 温 箱 温 度 设 到 三 十 五 摄 氏 度",
+  "intent": "set_temp2",
+  "expect": "set_temp2",
+  "slots": {
+   "temp": 35.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_set_wave_a_0.wav",
+  "ref": "检测波长设为二百八十纳米",
+  "hyp": "检 测 波 长 设 为 二 百 八 十 纳 米",
+  "intent": "set_wavelength",
+  "expect": "set_wavelength",
+  "slots": {
+   "wavelength": 80.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "冰糖_set_wave_a_1.wav",
+  "ref": "检测波长设为二百十纳米",
+  "hyp": "检 测 波 长 设 为 二 百 十 纳 米",
+  "intent": "set_wavelength",
+  "expect": "set_wavelength",
+  "slots": {
+   "wavelength": 10.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_ctl_eq_column.wav",
+  "ref": "平衡色谱柱",
+  "hyp": "平 衡 色 谱 柱",
+  "intent": "eq_column",
+  "expect": "eq_column",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_ctl_pause.wav",
+  "ref": "暂停运行",
+  "hyp": "暂 停 运 行",
+  "intent": "stop_run",
+  "expect": "stop_run",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_ctl_purge_bubble.wav",
+  "ref": "排气泡",
+  "hyp": "排 气 泡",
+  "intent": "purge_bubble",
+  "expect": "purge_bubble",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_ctl_start_acq.wav",
+  "ref": "开始数据采集",
+  "hyp": "开 始 数 据 采 集",
+  "intent": "start_acq",
+  "expect": "start_acq",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_ctl_start_inject.wav",
+  "ref": "开始进样",
+  "hyp": "开 始 进 样",
+  "intent": "start_inject",
+  "expect": "start_inject",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_ctl_stop_acq.wav",
+  "ref": "停止采集",
+  "hyp": "停 止 采 集",
+  "intent": "stop_acq",
+  "expect": "stop_acq",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_ctl_stop_run.wav",
+  "ref": "停止运行",
+  "hyp": "停 止 运 行",
+  "intent": "stop_run",
+  "expect": "stop_run",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_ctl_wash_needle.wav",
+  "ref": "洗针",
+  "hyp": "XIZHEN",
+  "intent": "wash_needle",
+  "expect": "wash_needle",
+  "slots": {},
+  "ok": true,
+  "src": "pinyin_fix"
+ },
+ {
+  "file": "白桦_dat_compare.wav",
+  "ref": "比较这两张色谱图",
+  "hyp": "比 较 这 两 张 色 谱 图",
+  "intent": "compare_chrom",
+  "expect": "compare_chrom",
+  "slots": {},
+  "ok": true,
+  "src": "pinyin_fix"
+ },
+ {
+  "file": "白桦_dat_export.wav",
+  "ref": "导出报告",
+  "hyp": "导 出 报 告",
+  "intent": "export_report",
+  "expect": "export_report",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_dat_peak_area.wav",
+  "ref": "看看峰面积",
+  "hyp": "看 看 峰 面 积",
+  "intent": "peak_area",
+  "expect": "peak_area",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_dat_retention.wav",
+  "ref": "看一下保留时间",
+  "hyp": "看 一 下 保 留 时 间",
+  "intent": "retention_time",
+  "expect": "retention_time",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_dat_save_spec.wav",
+  "ref": "保存这张谱图",
+  "hyp": "保 存 这 张 谱 图",
+  "intent": "save_spectra",
+  "expect": "save_spectra",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_emg_cancel.wav",
+  "ref": "取消刚才的操作",
+  "hyp": "取 消 刚 才 的 操 作",
+  "intent": "cancel_op",
+  "expect": "cancel_op",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_emg_stop.wav",
+  "ref": "急停",
+  "hyp": "急 停",
+  "intent": "emergency_stop",
+  "expect": "emergency_stop",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_hlp_amount_default.wav",
+  "ref": "进样量默认是多少",
+  "hyp": "进 样 量 默 认 是 多 少",
+  "intent": "start_inject",
+  "expect": "start_inject",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_hlp_bubble.wav",
+  "ref": "怎么排气泡",
+  "hyp": "什 么 排 气 泡",
+  "intent": "purge_bubble",
+  "expect": "purge_bubble",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_hlp_flow_max.wav",
+  "ref": "流速最大能到多少",
+  "hyp": "流 速 最 大 能 到 多 少",
+  "intent": "help_flow_max",
+  "expect": "help_flow_max",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_hlp_gradient.wav",
+  "ref": "怎么设置梯度",
+  "hyp": "怎 么 设 置 梯 度",
+  "intent": "help_gradient",
+  "expect": "help_gradient",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_mtd_load_a.wav",
+  "ref": "载入方法A",
+  "hyp": "载 入 方 法 a",
+  "intent": "load_method",
+  "expect": "load_method",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_mtd_load_program.wav",
+  "ref": "载入梯度程序",
+  "hyp": "载 入 梯 度 程 序",
+  "intent": "load_program",
+  "expect": "load_program",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_mtd_save.wav",
+  "ref": "保存当前方法",
+  "hyp": "保 存 当 前 方 法",
+  "intent": "save_method",
+  "expect": "save_method",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_mtd_set_default.wav",
+  "ref": "把这个设为默认方法",
+  "hyp": "把 这 个 设 为 默 认 方 法",
+  "intent": "set_default",
+  "expect": "set_default",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_qry_baseline.wav",
+  "ref": "基线稳定了吗",
+  "hyp": "基 线 稳 定 了 吗",
+  "intent": "query_baseline",
+  "expect": "query_baseline",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_qry_flow_now.wav",
+  "ref": "当前流速是多少",
+  "hyp": "当 前 流 速 是 多 少",
+  "intent": "query_flow",
+  "expect": "query_flow",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_qry_pressure.wav",
+  "ref": "现在压力多少",
+  "hyp": "现 在 压 力 多 少",
+  "intent": "query_pressure",
+  "expect": "query_pressure",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_qry_status.wav",
+  "ref": "系统运行状态怎么样",
+  "hyp": "系 统 运 行 状 态 怎 么 样",
+  "intent": "query_status",
+  "expect": "query_status",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_qry_step.wav",
+  "ref": "运行到哪一步了",
+  "hyp": "运 行 到 哪 一 步 了",
+  "intent": "query_step",
+  "expect": "query_step",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_qry_temp_reach.wav",
+  "ref": "柱温到了没有",
+  "hyp": "柱 温 到 了 没 有",
+  "intent": "query_temp",
+  "expect": "query_temp",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_set_amount_a_0.wav",
+  "ref": "进样量设为二十微升",
+  "hyp": "进 样 量 设 为 二 十 微 升",
+  "intent": "set_amount",
+  "expect": "set_amount",
+  "slots": {
+   "amount_ul": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_set_amount_a_1.wav",
+  "ref": "进样量设为一百微升",
+  "hyp": "进 样 量 设 为 一 百 微 升",
+  "intent": "set_amount",
+  "expect": "set_amount",
+  "slots": {
+   "amount_ul": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_set_curr_a_0.wav",
+  "ref": "抑制器电流设为五十毫安",
+  "hyp": "抑 制 器 电 流 设 为 五 十 毫 安",
+  "intent": "set_current",
+  "expect": "set_current",
+  "slots": {
+   "current_ma": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_set_curr_a_1.wav",
+  "ref": "抑制器电流设为一百毫安",
+  "hyp": "抑 制 器 电 流 设 为 一 百 毫 安",
+  "intent": "set_current",
+  "expect": "set_current",
+  "slots": {
+   "current_ma": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_set_flow_a_0.wav",
+  "ref": "流速设为三毫升每分钟",
+  "hyp": "流 速 设 为 三 毫 升 每 分 钟",
+  "intent": "set_flow",
+  "expect": "set_flow",
+  "slots": {
+   "flow": 3.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_set_flow_a_1.wav",
+  "ref": "流速设为二毫升每分钟",
+  "hyp": "流 速 设 为 二 毫 升 每 分 钟",
+  "intent": "set_flow",
+  "expect": "set_flow",
+  "slots": {
+   "flow": 2.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_set_flow_b_0.wav",
+  "ref": "把流速调到二点五毫升每分钟",
+  "hyp": "把 流 速 调 到 二 点 五 毫 升 每 分 钟",
+  "intent": "set_flow",
+  "expect": "set_flow",
+  "slots": {
+   "flow": 0.5
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_set_flow_b_1.wav",
+  "ref": "把流速调到零点五毫升每分钟",
+  "hyp": "把 流 速 调 到 零 点 五 毫 升 每 分 钟",
+  "intent": "set_flow",
+  "expect": "set_flow",
+  "slots": {
+   "flow": 0.5
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_set_press_a_0.wav",
+  "ref": "压力上限设为十五兆帕",
+  "hyp": "压 力 上 限 设 为 十 五 兆 帕",
+  "intent": "set_pressure",
+  "expect": "set_pressure",
+  "slots": {
+   "pressure_mpa": 5.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_set_press_a_1.wav",
+  "ref": "压力上限设为十兆帕",
+  "hyp": "压 力 上 限 设 为 十 兆 帕",
+  "intent": "set_pressure",
+  "expect": "set_pressure",
+  "slots": {
+   "pressure_mpa": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_set_temp_a_0.wav",
+  "ref": "柱温四十五度",
+  "hyp": "柱 温 四 十 五 度",
+  "intent": "set_temp",
+  "expect": "set_temp",
+  "slots": {
+   "temp": 5.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_set_temp_a_1.wav",
+  "ref": "柱温二十五度",
+  "hyp": "柱 温 二 十 五 度",
+  "intent": "set_temp",
+  "expect": "set_temp",
+  "slots": {
+   "temp": 5.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_set_temp_b_0.wav",
+  "ref": "把柱温箱温度设到六十摄氏度",
+  "hyp": "把 柱 温 箱 温 度 设 到 六 十 摄 氏 度",
+  "intent": "set_temp2",
+  "expect": "set_temp2",
+  "slots": {
+   "temp": 60.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_set_temp_b_1.wav",
+  "ref": "把柱温箱温度设到四十摄氏度",
+  "hyp": "把 柱 温 箱 温 度 设 到 四 十 摄 氏 度",
+  "intent": "set_temp2",
+  "expect": "set_temp2",
+  "slots": {
+   "temp": 40.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_set_wave_a_0.wav",
+  "ref": "检测波长设为二百八十纳米",
+  "hyp": "检 测 波 长 设 为 二 百 八 十 纳 米",
+  "intent": "set_wavelength",
+  "expect": "set_wavelength",
+  "slots": {
+   "wavelength": 80.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "白桦_set_wave_a_1.wav",
+  "ref": "检测波长设为二百八十纳米",
+  "hyp": "检 测 波 长 设 为 二 百 八 十 纳 米",
+  "intent": "set_wavelength",
+  "expect": "set_wavelength",
+  "slots": {
+   "wavelength": 80.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_ctl_eq_column.wav",
+  "ref": "平衡色谱柱",
+  "hyp": "平 衡 色 谱 柱",
+  "intent": "eq_column",
+  "expect": "eq_column",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_ctl_pause.wav",
+  "ref": "暂停运行",
+  "hyp": "暂 停 运 行",
+  "intent": "stop_run",
+  "expect": "stop_run",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_ctl_purge_bubble.wav",
+  "ref": "排气泡",
+  "hyp": "排 气 泡",
+  "intent": "purge_bubble",
+  "expect": "purge_bubble",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_ctl_start_acq.wav",
+  "ref": "开始数据采集",
+  "hyp": "开 始 数 据 采 集",
+  "intent": "start_acq",
+  "expect": "start_acq",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_ctl_start_inject.wav",
+  "ref": "开始进样",
+  "hyp": "开 始 进 样",
+  "intent": "start_inject",
+  "expect": "start_inject",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_ctl_stop_acq.wav",
+  "ref": "停止采集",
+  "hyp": "停 止 采 集",
+  "intent": "stop_acq",
+  "expect": "stop_acq",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_ctl_stop_run.wav",
+  "ref": "停止运行",
+  "hyp": "停 止 运 行",
+  "intent": "stop_run",
+  "expect": "stop_run",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_ctl_wash_needle.wav",
+  "ref": "洗针",
+  "hyp": "洗 针",
+  "intent": "wash_needle",
+  "expect": "wash_needle",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_dat_compare.wav",
+  "ref": "比较这两张色谱图",
+  "hyp": "比 较 这 两 张 色 谱 图",
+  "intent": "compare_chrom",
+  "expect": "compare_chrom",
+  "slots": {},
+  "ok": true,
+  "src": "pinyin_fix"
+ },
+ {
+  "file": "苏打_dat_export.wav",
+  "ref": "导出报告",
+  "hyp": "导 出 报 告",
+  "intent": "export_report",
+  "expect": "export_report",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_dat_peak_area.wav",
+  "ref": "看看峰面积",
+  "hyp": "看 看 峰 面 积",
+  "intent": "peak_area",
+  "expect": "peak_area",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_dat_retention.wav",
+  "ref": "看一下保留时间",
+  "hyp": "看 一 下 保 留 时 间",
+  "intent": "retention_time",
+  "expect": "retention_time",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_dat_save_spec.wav",
+  "ref": "保存这张谱图",
+  "hyp": "保 存 这 张 谱 图",
+  "intent": "save_spectra",
+  "expect": "save_spectra",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_emg_cancel.wav",
+  "ref": "取消刚才的操作",
+  "hyp": "取 消 刚 才 的 操 作",
+  "intent": "cancel_op",
+  "expect": "cancel_op",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_emg_stop.wav",
+  "ref": "急停",
+  "hyp": "急 停",
+  "intent": "emergency_stop",
+  "expect": "emergency_stop",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_hlp_amount_default.wav",
+  "ref": "进样量默认是多少",
+  "hyp": "进 样 量 默 认 是 多 少",
+  "intent": "start_inject",
+  "expect": "start_inject",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_hlp_bubble.wav",
+  "ref": "怎么排气泡",
+  "hyp": "怎 么 排 气 泡",
+  "intent": "purge_bubble",
+  "expect": "purge_bubble",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_hlp_flow_max.wav",
+  "ref": "流速最大能到多少",
+  "hyp": "流 速 最 大 能 到 多 少",
+  "intent": "help_flow_max",
+  "expect": "help_flow_max",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_hlp_gradient.wav",
+  "ref": "怎么设置梯度",
+  "hyp": "怎 么 设 置 梯 度",
+  "intent": "help_gradient",
+  "expect": "help_gradient",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_mtd_load_a.wav",
+  "ref": "载入方法A",
+  "hyp": "载 入 方 法 a",
+  "intent": "load_method",
+  "expect": "load_method",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_mtd_load_program.wav",
+  "ref": "载入梯度程序",
+  "hyp": "载 入 梯 度 程 序",
+  "intent": "load_program",
+  "expect": "load_program",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_mtd_save.wav",
+  "ref": "保存当前方法",
+  "hyp": "保 存 当 前 方 法",
+  "intent": "save_method",
+  "expect": "save_method",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_mtd_set_default.wav",
+  "ref": "把这个设为默认方法",
+  "hyp": "把 这 个 设 为 默 认 方 法",
+  "intent": "set_default",
+  "expect": "set_default",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_qry_baseline.wav",
+  "ref": "基线稳定了吗",
+  "hyp": "基 线 稳 定 了 吗",
+  "intent": "query_baseline",
+  "expect": "query_baseline",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_qry_flow_now.wav",
+  "ref": "当前流速是多少",
+  "hyp": "当 前 流 速 是 多 少",
+  "intent": "query_flow",
+  "expect": "query_flow",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_qry_pressure.wav",
+  "ref": "现在压力多少",
+  "hyp": "现 在 压 力 多 少",
+  "intent": "query_pressure",
+  "expect": "query_pressure",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_qry_status.wav",
+  "ref": "系统运行状态怎么样",
+  "hyp": "系 统 运 行 状 态 怎 么 样",
+  "intent": "query_status",
+  "expect": "query_status",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_qry_step.wav",
+  "ref": "运行到哪一步了",
+  "hyp": "运 行 到 哪 一 步 了",
+  "intent": "query_step",
+  "expect": "query_step",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_qry_temp_reach.wav",
+  "ref": "柱温到了没有",
+  "hyp": "柱 温 到 了 没 有",
+  "intent": "query_temp",
+  "expect": "query_temp",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_set_amount_a_0.wav",
+  "ref": "进样量设为五十微升",
+  "hyp": "进 样 量 设 为 五 十 微 升",
+  "intent": "set_amount",
+  "expect": "set_amount",
+  "slots": {
+   "amount_ul": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_set_amount_a_1.wav",
+  "ref": "进样量设为五微升",
+  "hyp": "进 样 量 设 为 五 微 升",
+  "intent": "set_amount",
+  "expect": "set_amount",
+  "slots": {
+   "amount_ul": 5.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_set_curr_a_0.wav",
+  "ref": "抑制器电流设为二百毫安",
+  "hyp": "抑 制 器 电 流 设 为 二 百 毫 安",
+  "intent": "set_current",
+  "expect": "set_current",
+  "slots": {
+   "current_ma": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_set_curr_a_1.wav",
+  "ref": "抑制器电流设为五十毫安",
+  "hyp": "抑 制 器 电 流 设 为 五 十 毫 安",
+  "intent": "set_current",
+  "expect": "set_current",
+  "slots": {
+   "current_ma": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_set_flow_a_0.wav",
+  "ref": "流速设为一毫升每分钟",
+  "hyp": "流 速 设 为 一 毫 升 每 分 钟",
+  "intent": "set_flow",
+  "expect": "set_flow",
+  "slots": {
+   "flow": 1.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_set_flow_a_1.wav",
+  "ref": "流速设为三毫升每分钟",
+  "hyp": "流 速 设 为 三 毫 升 每 分 钟",
+  "intent": "set_flow",
+  "expect": "set_flow",
+  "slots": {
+   "flow": 3.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_set_flow_b_0.wav",
+  "ref": "把流速调到二毫升每分钟",
+  "hyp": "把 流 速 调 到 二 毫 升 每 分 钟",
+  "intent": "set_flow",
+  "expect": "set_flow",
+  "slots": {
+   "flow": 2.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_set_flow_b_1.wav",
+  "ref": "把流速调到一点五毫升每分钟",
+  "hyp": "把 流 速 调 到 一 点 五 毫 升 每 分 钟",
+  "intent": "set_flow",
+  "expect": "set_flow",
+  "slots": {
+   "flow": 0.5
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_set_press_a_0.wav",
+  "ref": "压力上限设为二十兆帕",
+  "hyp": "压 力 上 限 设 为 二 十 兆 帕",
+  "intent": "set_pressure",
+  "expect": "set_pressure",
+  "slots": {
+   "pressure_mpa": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_set_press_a_1.wav",
+  "ref": "压力上限设为二十兆帕",
+  "hyp": "压 力 上 限 设 为 二 十 兆 帕",
+  "intent": "set_pressure",
+  "expect": "set_pressure",
+  "slots": {
+   "pressure_mpa": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_set_temp_a_0.wav",
+  "ref": "柱温四十度",
+  "hyp": "柱 温 四 十 度",
+  "intent": "set_temp",
+  "expect": "set_temp",
+  "slots": {
+   "temp": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_set_temp_a_1.wav",
+  "ref": "柱温三十五度",
+  "hyp": "柱 温 三 十 五 度",
+  "intent": "set_temp",
+  "expect": "set_temp",
+  "slots": {
+   "temp": 5.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_set_temp_b_0.wav",
+  "ref": "把柱温箱温度设到三十五摄氏度",
+  "hyp": "把 柱 温 箱 温 度 设 到 三 十 五 摄 氏 度",
+  "intent": "set_temp2",
+  "expect": "set_temp2",
+  "slots": {
+   "temp": 35.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_set_temp_b_1.wav",
+  "ref": "把柱温箱温度设到四十摄氏度",
+  "hyp": "把 柱 温 箱 温 度 设 到 四 十 摄 氏 度",
+  "intent": "set_temp2",
+  "expect": "set_temp2",
+  "slots": {
+   "temp": 40.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_set_wave_a_0.wav",
+  "ref": "检测波长设为二百十纳米",
+  "hyp": "检 测 波 长 设 为 二 百 十 纳 米",
+  "intent": "set_wavelength",
+  "expect": "set_wavelength",
+  "slots": {
+   "wavelength": 10.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "苏打_set_wave_a_1.wav",
+  "ref": "检测波长设为二百十纳米",
+  "hyp": "检 测 波 长 设 为 二 百 十 纳 米",
+  "intent": "set_wavelength",
+  "expect": "set_wavelength",
+  "slots": {
+   "wavelength": 10.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_ctl_eq_column.wav",
+  "ref": "平衡色谱柱",
+  "hyp": "平 衡 色 谱 柱",
+  "intent": "eq_column",
+  "expect": "eq_column",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_ctl_pause.wav",
+  "ref": "暂停运行",
+  "hyp": "暂 停 运 行",
+  "intent": "stop_run",
+  "expect": "stop_run",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_ctl_purge_bubble.wav",
+  "ref": "排气泡",
+  "hyp": "排 气 泡",
+  "intent": "purge_bubble",
+  "expect": "purge_bubble",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_ctl_start_acq.wav",
+  "ref": "开始数据采集",
+  "hyp": "开 始 数 据 采 集",
+  "intent": "start_acq",
+  "expect": "start_acq",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_ctl_start_inject.wav",
+  "ref": "开始进样",
+  "hyp": "开 始 进 样",
+  "intent": "start_inject",
+  "expect": "start_inject",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_ctl_stop_acq.wav",
+  "ref": "停止采集",
+  "hyp": "停 止 采 集",
+  "intent": "stop_acq",
+  "expect": "stop_acq",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_ctl_stop_run.wav",
+  "ref": "停止运行",
+  "hyp": "停 止 运 行",
+  "intent": "stop_run",
+  "expect": "stop_run",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_ctl_wash_needle.wav",
+  "ref": "洗针",
+  "hyp": "洗 洗 针",
+  "intent": "wash_needle",
+  "expect": "wash_needle",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_dat_compare.wav",
+  "ref": "比较这两张色谱图",
+  "hyp": "比 较 这 两 张 色 谱 图",
+  "intent": "compare_chrom",
+  "expect": "compare_chrom",
+  "slots": {},
+  "ok": true,
+  "src": "pinyin_fix"
+ },
+ {
+  "file": "茉莉_dat_export.wav",
+  "ref": "导出报告",
+  "hyp": "导 出 报 告",
+  "intent": "export_report",
+  "expect": "export_report",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_dat_peak_area.wav",
+  "ref": "看看峰面积",
+  "hyp": "看 看 峰 面 积",
+  "intent": "peak_area",
+  "expect": "peak_area",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_dat_retention.wav",
+  "ref": "看一下保留时间",
+  "hyp": "看 一 下 保 留 时 间",
+  "intent": "retention_time",
+  "expect": "retention_time",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_dat_save_spec.wav",
+  "ref": "保存这张谱图",
+  "hyp": "保 存 这 张 谱 图",
+  "intent": "save_spectra",
+  "expect": "save_spectra",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_emg_cancel.wav",
+  "ref": "取消刚才的操作",
+  "hyp": "取 消 刚 才 的 操 作",
+  "intent": "cancel_op",
+  "expect": "cancel_op",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_emg_stop.wav",
+  "ref": "急停",
+  "hyp": "急 停",
+  "intent": "emergency_stop",
+  "expect": "emergency_stop",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_hlp_amount_default.wav",
+  "ref": "进样量默认是多少",
+  "hyp": "进 样 量 默 认 是 多 少",
+  "intent": "start_inject",
+  "expect": "start_inject",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_hlp_bubble.wav",
+  "ref": "怎么排气泡",
+  "hyp": "怎 么 排 气 泡",
+  "intent": "purge_bubble",
+  "expect": "purge_bubble",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_hlp_flow_max.wav",
+  "ref": "流速最大能到多少",
+  "hyp": "流 速 最 大 能 到 多 少",
+  "intent": "help_flow_max",
+  "expect": "help_flow_max",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_hlp_gradient.wav",
+  "ref": "怎么设置梯度",
+  "hyp": "怎 么 设 置 梯 度",
+  "intent": "help_gradient",
+  "expect": "help_gradient",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_mtd_load_a.wav",
+  "ref": "载入方法A",
+  "hyp": "载 入 方 法 a",
+  "intent": "load_method",
+  "expect": "load_method",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_mtd_load_program.wav",
+  "ref": "载入梯度程序",
+  "hyp": "载 入 梯 度 程 序",
+  "intent": "load_program",
+  "expect": "load_program",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_mtd_save.wav",
+  "ref": "保存当前方法",
+  "hyp": "保 存 当 前 方 法",
+  "intent": "save_method",
+  "expect": "save_method",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_mtd_set_default.wav",
+  "ref": "把这个设为默认方法",
+  "hyp": "把 这 个 设 为 默 认 方 法",
+  "intent": "set_default",
+  "expect": "set_default",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_qry_baseline.wav",
+  "ref": "基线稳定了吗",
+  "hyp": "基 线 稳 定 了 吗",
+  "intent": "query_baseline",
+  "expect": "query_baseline",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_qry_flow_now.wav",
+  "ref": "当前流速是多少",
+  "hyp": "当 前 流 速 是 多 少",
+  "intent": "query_flow",
+  "expect": "query_flow",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_qry_pressure.wav",
+  "ref": "现在压力多少",
+  "hyp": "现 在 压 力 多 少",
+  "intent": "query_pressure",
+  "expect": "query_pressure",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_qry_status.wav",
+  "ref": "系统运行状态怎么样",
+  "hyp": "系 统 运 行 状 态 怎 么 样",
+  "intent": "query_status",
+  "expect": "query_status",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_qry_step.wav",
+  "ref": "运行到哪一步了",
+  "hyp": "运 行 到 哪 一 步 了",
+  "intent": "query_step",
+  "expect": "query_step",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_qry_temp_reach.wav",
+  "ref": "柱温到了没有",
+  "hyp": "柱 温 到 了 没 有",
+  "intent": "query_temp",
+  "expect": "query_temp",
+  "slots": {},
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_set_amount_a_0.wav",
+  "ref": "进样量设为一百微升",
+  "hyp": "进 样 量 设 为 一 百 微 升",
+  "intent": "set_amount",
+  "expect": "set_amount",
+  "slots": {
+   "amount_ul": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_set_amount_a_1.wav",
+  "ref": "进样量设为五十微升",
+  "hyp": "进 样 量 设 为 五 十 微 升",
+  "intent": "set_amount",
+  "expect": "set_amount",
+  "slots": {
+   "amount_ul": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_set_curr_a_0.wav",
+  "ref": "抑制器电流设为二百毫安",
+  "hyp": "抑 制 器 电 流 设 为 二 百 毫 安",
+  "intent": "set_current",
+  "expect": "set_current",
+  "slots": {
+   "current_ma": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_set_curr_a_1.wav",
+  "ref": "抑制器电流设为五十毫安",
+  "hyp": "抑 制 器 电 流 设 为 五 十 毫 安",
+  "intent": "set_current",
+  "expect": "set_current",
+  "slots": {
+   "current_ma": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_set_flow_a_0.wav",
+  "ref": "流速设为零点五毫升每分钟",
+  "hyp": "流 速 设 为 零 点 五 毫 升 每 分 钟",
+  "intent": "set_flow",
+  "expect": "set_flow",
+  "slots": {
+   "flow": 0.5
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_set_flow_a_1.wav",
+  "ref": "流速设为一毫升每分钟",
+  "hyp": "流 速 设 为 一 毫 升 每 分 钟",
+  "intent": "set_flow",
+  "expect": "set_flow",
+  "slots": {
+   "flow": 1.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_set_flow_b_0.wav",
+  "ref": "把流速调到一毫升每分钟",
+  "hyp": "把 流 速 调 到 一 毫 升 每 分 钟",
+  "intent": "set_flow",
+  "expect": "set_flow",
+  "slots": {
+   "flow": 1.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_set_flow_b_1.wav",
+  "ref": "把流速调到二点五毫升每分钟",
+  "hyp": "把 流 速 调 到 二 点 五 毫 升 每 分 钟",
+  "intent": "set_flow",
+  "expect": "set_flow",
+  "slots": {
+   "flow": 0.5
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_set_press_a_0.wav",
+  "ref": "压力上限设为十五兆帕",
+  "hyp": "压 力 上 限 设 为 十 五 兆 帕",
+  "intent": "set_pressure",
+  "expect": "set_pressure",
+  "slots": {
+   "pressure_mpa": 5.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_set_press_a_1.wav",
+  "ref": "压力上限设为二十五兆帕",
+  "hyp": "压 力 上 限 设 为 二 十 五 兆 帕",
+  "intent": "set_pressure",
+  "expect": "set_pressure",
+  "slots": {
+   "pressure_mpa": 5.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_set_temp_a_0.wav",
+  "ref": "柱温六十度",
+  "hyp": "柱 温 六 十 度",
+  "intent": "set_temp",
+  "expect": "set_temp",
+  "slots": {
+   "temp": 0.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_set_temp_a_1.wav",
+  "ref": "柱温二十五度",
+  "hyp": "柱 温 二 十 五 度",
+  "intent": "set_temp",
+  "expect": "set_temp",
+  "slots": {
+   "temp": 5.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_set_temp_b_0.wav",
+  "ref": "把柱温箱温度设到六十摄氏度",
+  "hyp": "把 柱 温 箱 温 度 设 到 六 十 摄 氏 度",
+  "intent": "set_temp2",
+  "expect": "set_temp2",
+  "slots": {
+   "temp": 60.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_set_temp_b_1.wav",
+  "ref": "把柱温箱温度设到三十五摄氏度",
+  "hyp": "把 柱 温 箱 温 度 设 到 三 十 五 摄 氏 度",
+  "intent": "set_temp2",
+  "expect": "set_temp2",
+  "slots": {
+   "temp": 35.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_set_wave_a_0.wav",
+  "ref": "检测波长设为二百八十纳米",
+  "hyp": "检 测 波 长 设 为 二 百 八 十 纳 米",
+  "intent": "set_wavelength",
+  "expect": "set_wavelength",
+  "slots": {
+   "wavelength": 80.0
+  },
+  "ok": true,
+  "src": "rule"
+ },
+ {
+  "file": "茉莉_set_wave_a_1.wav",
+  "ref": "检测波长设为二百八十纳米",
+  "hyp": "检 测 波 长 设 为 二 百 八 十 纳 米",
+  "intent": "set_wavelength",
+  "expect": "set_wavelength",
+  "slots": {
+   "wavelength": 80.0
+  },
+  "ok": true,
+  "src": "rule"
+ }
+]

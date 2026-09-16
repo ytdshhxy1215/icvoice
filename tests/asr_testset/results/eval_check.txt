@@ -1,0 +1,13 @@
+acc: 21/32 = 65.6%
+
+set_temp | REF:柱温三十五度 | HYP:柱 温 三 十 五 度
+set_temp2 | REF:把柱温箱温度设到六十摄氏度 | HYP:把 柱 温 箱 温 度 设 到 六 十 摄 氏 度
+set_wavelength | REF:检测波长设为二百五十四纳米 | HYP:检 测 波 长 设 为 二 百 五 十 四 纳 米
+set_amount | REF:进样量设为十微升 | HYP:进 样 量 设 卫 视 微 声
+set_pressure | REF:压力上限设为十五兆帕 | HYP:压 力 上 限 设 为 十 五 兆 帕
+set_gradient | REF:载入梯度洗脱程序，梯度从百分之五升到百分之九十五 | HYP:载 入 梯 度 洗 脱 程 序 梯 度 从 百 分 之 五 升 到 百 分 之 九 十 五
+control2 | REF:停止运行 | HYP:kingerincine
+control3 | REF:平衡色谱柱 | HYP:葵 横 色 谱 柱
+control7 | REF:停止采集 | HYP:葵 之 采 集
+query2 | REF:运行到哪一步了 | HYP:跃 行 到 哪 一 步 了
+emerg1 | REF:急停 | HYP:jiking

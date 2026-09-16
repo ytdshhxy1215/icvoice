@@ -1,0 +1,2 @@
+直接去空格口径: 26/32 = 81.2%
+FAIL: ['set_amount', 'control2', 'control3', 'control7', 'query2', 'emerg1']

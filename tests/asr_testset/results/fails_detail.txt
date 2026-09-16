@@ -1,0 +1,24 @@
+set_amount
+  REF:进样量设为十微升
+  HYP:进 样 量 设 卫 视 微 声
+
+control2
+  REF:停止运行
+  HYP:kingerincine
+
+control3
+  REF:平衡色谱柱
+  HYP:葵 横 色 谱 柱
+
+control7
+  REF:停止采集
+  HYP:葵 之 采 集
+
+query2
+  REF:运行到哪一步了
+  HYP:跃 行 到 哪 一 步 了
+
+emerg1
+  REF:急停
+  HYP:jiking
+

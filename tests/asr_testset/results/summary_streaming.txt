@@ -1,0 +1,196 @@
+streaming online acc: 116/180=64.4%
+by voice: {'冰糖': '29/45', '白桦': '27/45', '苏打': '31/45', '茉莉': '29/45'}
+
+FAILS:
+冰糖_ctl_start_inject.wav
+ ref:开始进样
+ hyp:开始禁样
+冰糖_ctl_wash_needle.wav
+ ref:洗针
+ hyp:细真
+冰糖_dat_peak_area.wav
+ ref:看看峰面积
+ hyp:看看风面积
+冰糖_hlp_amount_default.wav
+ ref:进样量默认是多少
+ hyp:尽样量默认是多少
+冰糖_mtd_load_program.wav
+ ref:载入梯度程序
+ hyp:再入梯度程序
+冰糖_qry_temp_reach.wav
+ ref:柱温到了没有
+ hyp:助瘟到了没有
+冰糖_set_amount_a_0.wav
+ ref:进样量设为一百微升
+ hyp:尽样量设为一百微升
+冰糖_set_amount_a_1.wav
+ ref:进样量设为五微升
+ hyp:尽样量设为五微升
+冰糖_set_curr_a_0.wav
+ ref:抑制器电流设为五十毫安
+ hyp:抑制气电流设为五十毫安
+冰糖_set_curr_a_1.wav
+ ref:抑制器电流设为五十毫安
+ hyp:抑制气电流设为五十毫安
+冰糖_set_flow_a_1.wav
+ ref:流速设为零点五毫升每分钟
+ hyp:流宿设为零点五毫升每分钟
+冰糖_set_temp_a_0.wav
+ ref:柱温四十度
+ hyp:助温四十度
+冰糖_set_temp_a_1.wav
+ ref:柱温三十五度
+ hyp:主温三十五度
+冰糖_set_temp_b_0.wav
+ ref:把柱温箱温度设到三十五摄氏度
+ hyp:把诸瘟香温度设到三十五摄氏度
+冰糖_set_temp_b_1.wav
+ ref:把柱温箱温度设到三十五摄氏度
+ hyp:把助温箱温度设到三十五摄氏度
+冰糖_set_wave_a_0.wav
+ ref:检测波长设为二百八十纳米
+ hyp:监测波长设为二百八十纳米
+白桦_ctl_purge_bubble.wav
+ ref:排气泡
+ hyp:排气炮
+白桦_ctl_start_inject.wav
+ ref:开始进样
+ hyp:开始禁药
+白桦_ctl_stop_acq.wav
+ ref:停止采集
+ hyp:平直采集
+白桦_ctl_wash_needle.wav
+ ref:洗针
+ hyp:喜真
+白桦_dat_peak_area.wav
+ ref:看看峰面积
+ hyp:看看封面情
+白桦_hlp_amount_default.wav
+ ref:进样量默认是多少
+ hyp:尽样量默认是多少
+白桦_hlp_bubble.wav
+ ref:怎么排气泡
+ hyp:什么排气泡
+白桦_qry_temp_reach.wav
+ ref:柱温到了没有
+ hyp:助瘟到了没有
+白桦_set_amount_a_0.wav
+ ref:进样量设为二十微升
+ hyp:净样量设为二十微升
+白桦_set_amount_a_1.wav
+ ref:进样量设为一百微升
+ hyp:尽样量设为一百微升
+白桦_set_curr_a_0.wav
+ ref:抑制器电流设为五十毫安
+ hyp:抑制气电流设为五十毫安
+白桦_set_flow_a_0.wav
+ ref:流速设为三毫升每分钟
+ hyp:柳宿设为三毫升每分钟
+白桦_set_flow_a_1.wav
+ ref:流速设为二毫升每分钟
+ hyp:刘宿设为二毫升每分钟
+白桦_set_flow_b_1.wav
+ ref:把流速调到零点五毫升每分钟
+ hyp:把流宿调到零点五毫升每分钟
+白桦_set_temp_a_0.wav
+ ref:柱温四十五度
+ hyp:注温四十五度
+白桦_set_temp_a_1.wav
+ ref:柱温二十五度
+ hyp:助温二十五度
+白桦_set_temp_b_0.wav
+ ref:把柱温箱温度设到六十摄氏度
+ hyp:把助温香温度设到六十摄氏度
+白桦_set_temp_b_1.wav
+ ref:把柱温箱温度设到四十摄氏度
+ hyp:把助温箱温度设到四十摄氏度
+苏打_ctl_purge_bubble.wav
+ ref:排气泡
+ hyp:排气炮
+苏打_ctl_start_inject.wav
+ ref:开始进样
+ hyp:开始敬仰
+苏打_ctl_wash_needle.wav
+ ref:洗针
+ hyp:喜真
+苏打_dat_peak_area.wav
+ ref:看看峰面积
+ hyp:看看封面记
+苏打_hlp_amount_default.wav
+ ref:进样量默认是多少
+ hyp:净样量默认是多少
+苏打_hlp_flow_max.wav
+ ref:流速最大能到多少
+ hyp:流游最最大能到多少
+苏打_qry_baseline.wav
+ ref:基线稳定了吗
+ hyp:期限稳定了吗
+苏打_qry_temp_reach.wav
+ ref:柱温到了没有
+ hyp:助瘟到了没有
+苏打_set_curr_a_0.wav
+ ref:抑制器电流设为二百毫安
+ hyp:抑制气电流设为二百毫安
+苏打_set_flow_a_0.wav
+ ref:流速设为一毫升每分钟
+ hyp:刘宋设为一毫升每分钟
+苏打_set_flow_a_1.wav
+ ref:流速设为三毫升每分钟
+ hyp:刘宿设为三毫升每分钟
+苏打_set_temp_a_0.wav
+ ref:柱温四十度
+ hyp:助温四十度
+苏打_set_temp_b_0.wav
+ ref:把柱温箱温度设到三十五摄氏度
+ hyp:把助蚊香温度设到三十五摄氏度
+苏打_set_temp_b_1.wav
+ ref:把柱温箱温度设到四十摄氏度
+ hyp:把助温箱温度设到四十摄氏度
+茉莉_ctl_eq_column.wav
+ ref:平衡色谱柱
+ hyp:平衡素谱助
+茉莉_ctl_purge_bubble.wav
+ ref:排气泡
+ hyp:排气炮
+茉莉_ctl_start_inject.wav
+ ref:开始进样
+ hyp:开始敬样
+茉莉_ctl_wash_needle.wav
+ ref:洗针
+ hyp:洗真
+茉莉_dat_peak_area.wav
+ ref:看看峰面积
+ hyp:看看封面记
+茉莉_emg_stop.wav
+ ref:急停
+ hyp:集田
+茉莉_hlp_amount_default.wav
+ ref:进样量默认是多少
+ hyp:尽了量默认是多少
+茉莉_qry_baseline.wav
+ ref:基线稳定了吗
+ hyp:西线稳定了吗
+茉莉_qry_temp_reach.wav
+ ref:柱温到了没有
+ hyp:猪瘟到了没有
+茉莉_set_amount_a_0.wav
+ ref:进样量设为一百微升
+ hyp:净样量设为一百微升
+茉莉_set_curr_a_0.wav
+ ref:抑制器电流设为二百毫安
+ hyp:抑制气电流设为二百毫安
+茉莉_set_curr_a_1.wav
+ ref:抑制器电流设为五十毫安
+ hyp:抑制气电流设为五十毫安
+茉莉_set_temp_a_0.wav
+ ref:柱温六十度
+ hyp:助温六十度
+茉莉_set_temp_a_1.wav
+ ref:柱温二十五度
+ hyp:祝恩二十五度
+茉莉_set_temp_b_0.wav
+ ref:把柱温箱温度设到六十摄氏度
+ hyp:把助温箱温度设到六十摄氏度
+茉莉_set_temp_b_1.wav
+ ref:把柱温箱温度设到三十五摄氏度
+ hyp:把助温箱温度设到三十五摄氏度

@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# 模型与音频大文件
+models/sherpa/model.onnx
+models/sherpa/model_eb.onnx
+models/sherpa/model.pt
+funasr_env/tmp/
+tests/asr_testset/gen_wav/
+tests/asr_testset/gen_wav_v2/
+outputs/
+
+# 冒烟/录音临时文件
+_mic_test.wav
+_smoke.wav
+
+# 敏感信息
+.env

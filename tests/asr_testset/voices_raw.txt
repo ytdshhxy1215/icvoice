@@ -1,0 +1,100 @@
+Voice ID| |
+|语言|
+|性别|MiMo-默认|
+|mimo_default|
+|因部署集群而异，中国集群默认为 |冰糖|，其他集群默认为 |Mia|冰糖|
+|冰糖|
+|中文|
+|女性|茉莉|
+|茉莉|
+|中文|
+|女性|苏打|
+|苏打|
+|中文|
+|男性|白桦|
+|白桦|
+|中文|
+|男性|Mia|
+|Mia|
+|英文|
+|女性|Chloe|
+|Chloe|
+|英文|
+|女性|Milo|
+|Milo|
+|英文|
+|男性|Dean|
+|Dean|
+|英文|
+|男性|
+|调用示例|
+|非流式调用|
+|Python SDK|Curl|import| os
+|from| openai |import| OpenAI
+|import| base64
+|
+|client |=| OpenAI|(|
+|    api_key|=|os|.|environ|.|get|(|"MIMO_API_KEY"|)|,|
+|    base_url|=|"https://api.xiaomimimo.com/v1"|
+|)|
+|
+|completion |=| client|.|chat|.|completions|.|create|(|
+|    model|=|"mimo-v2.5-tts"|,|
+|    messages|=|[|
+|        |{|
+|            |"role"|:| |"user"|,|
+|            |"content"|:| |"Bright, bouncy, slightly sing-song tone — like you're bursting with good news you can barely hold in. Fast pace, rising pitch at the end."|
+|        |}|,|
+|        |{|
+|            |"role"|:| |"assistant"|,|
+|            |"content"|:| |"Hey boss — guess what, guess what? I just got the results back and I actually passed! Not just passed, I got a distinction! I know, I know — you told me I was cutting it close, but hey, here we are. Drinks are on me tonight, okay?"|
+|        |}|
+|    |]|,|
+|    audio|=|{|
+|        |"format"|:| |"wav"|,|
+|        |"voice"|:| |"Chloe"|
+|    |}|
+|)|
+|
+|message |=| completion|.|choices|[|0|]|.|message
+|audio_bytes |=| base64|.|b64decode|(|message|.|audio|.|data|)|
+|with| |open|(|"audio_file.wav"|,| |"wb"|)| |as| f|:|
+|    f|.|write|(|audio_bytes|)|
+|
+|流式调用|
+|mimo-v2.5-tts| 低延迟流式输出功能已上线；当前流式接口恢复正常，可实时返回流式响应。|
+|Python SDK|Curl|import| base64
+|import| os
+|import| numpy |as| np
+|import| soundfile |as| sf
+|from| openai |import| OpenAI
+|
+|client |=| OpenAI|(|
+|    api_key|=|os|.|environ|.|get|(|"MIMO_API_KEY"|)|,|
+|    base_url|=|"https://api.xiaomimimo.com/v1"|
+|)|
+|
+|completion |=| client|.|chat|.|completions|.|create|(|
+|    model|=|"mimo-v2.5-tts"|,|
+|    messages|=|[|
+|        |{|
+|            |"role"|:| |"user"|,|
+|            |"content"|:| |"Bright, bouncy, slightly sing-song tone — like you're bursting with good news you can barely hold in. Fast pace, rising pitch at the end."|
+|        |}|,|
+|        |{|
+|            |"role"|:| |"assistant"|,|
+|            |"content"|:| |"Hey boss — guess what, guess what? I just got the results back and I actually passed! Not just passed, I got a distinction! I know, I know — you told me I was cutting it close, but hey, here we are. Drinks are on me tonight, okay?"|
+|        |}|
+|    |]|,|
+|    audio|=|{|
+|        |"format"|:| |"pcm16"|,|
+|        |"voice"|:| |"Chloe"|
+|    |}|,|
+|    stream|=|True|
+|)|
+|
+|# 24kHz PCM16LE mono audio|
+|collected_chunks|:| np|.|ndarray |=| np|.|array|(|[|]|,| dtype|=|np|.|float32|)|
+|
+|for| chunk |in| completion|:|
+|    |if| |not| c

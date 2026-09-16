@@ -1,0 +1,32 @@
+set_flow	REF:流速设为一点零毫升每分钟	HYP:流 速 设 为 一 点 零 毫 升 每 分 钟
+set_flow2	REF:把流速调到两点五毫升每分钟	HYP:把 流 速 调 到 两 点 五 毫 升 每 分 钟
+set_temp	REF:柱温三十五度	HYP:柱 温 三 十 五 度
+set_temp2	REF:把柱温箱温度设到六十摄氏度	HYP:把 柱 温 箱 温 度 设 到 六 十 摄 氏 度
+set_wavelength	REF:检测波长设为二百五十四纳米	HYP:检 测 波 长 设 为 二 百 五 十 四 纳 米
+set_amount	REF:进样量设为十微升	HYP:进 样 量 设 卫 视 微 声
+set_pressure	REF:压力上限设为十五兆帕	HYP:压 力 上 限 设 为 十 五 兆 帕
+set_gradient	REF:载入梯度洗脱程序，梯度从百分之五升到百分之九十五	HYP:载 入 梯 度 洗 脱 程 序 梯 度 从 百 分 之 五 升 到 百 分 之 九 十 五
+control1	REF:开始进样	HYP:开 始 进 样
+control2	REF:停止运行	HYP:kingerincine
+control3	REF:平衡色谱柱	HYP:葵 横 色 谱 柱
+control4	REF:洗针	HYP:洗 针
+control5	REF:排气泡	HYP:排 气 泡
+control6	REF:开始数据采集	HYP:开 始 数 据 采 集
+control7	REF:停止采集	HYP:葵 之 采 集
+query1	REF:现在压力多少	HYP:现 在 压 力 多 少
+query2	REF:运行到哪一步了	HYP:跃 行 到 哪 一 步 了
+query3	REF:柱温到了没有	HYP:柱 温 到 了 没 有
+query4	REF:当前流速是多少	HYP:当 前 流 速 是 多 少
+query5	REF:系统运行状态怎么样	HYP:系 统 运 行 状 态 怎 么 样
+data1	REF:看看峰面积	HYP:看 看 峰 面 积
+data2	REF:保存这张谱图	HYP:保 存 这 张 谱 图
+data3	REF:导出报告	HYP:导 出 报 告
+data4	REF:比较这两张色谱图	HYP:比 较 这 两 张 色 谱 图
+method1	REF:载入方法A	HYP:载 入 方 法 a
+method2	REF:把这个设为默认方法	HYP:把 这 个 设 为 默 认 方 法
+help1	REF:怎么设置梯度	HYP:怎 么 设 置 梯 度
+help2	REF:流速最大能到多少	HYP:流 速 最 大 能 到 多 少
+help3	REF:进样量默认是多少	HYP:进 样 量 默 认 是 多 少
+emerg1	REF:急停	HYP:jiking
+emerg2	REF:取消刚才的操作	HYP:取 消 刚 才 的 操 作
+long1	REF:开始进样，然后平衡色谱柱，等压力稳定后开始采集数据	HYP:开 始 进 样 然 后 平 衡 色 谱 柱 等 压 力 稳 定 后 开 始 采 集 数 据
