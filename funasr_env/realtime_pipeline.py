@@ -65,11 +65,17 @@ def norm(t):
 
 # 意图表：意图 -> (模板关键词列表, 槽位抽取正则)
 INTENTS = [
+    # 具体问句/控制词放在泛化关键词之前，避免“暂停运行”被“停运行”、
+    # “进样量默认是多少”被“进样”抢先命中。
+    ("pause_run",      ["暂停"]),
+    ("help_gradient",  ["怎么设置梯度", "如何设置梯度"]),
+    ("help_flow_max",  ["流速最大", "最大流速"]),
+    ("help_amount",    ["进样量默认", "默认进样量"]),
+    ("help_bubble",    ["怎么排气泡", "如何排气泡", "什么排气泡", "怎么排空气"]),
     ("start_inject",   ["开始进样", "进样"]),
     ("stop_run",       ["停止运行", "停运行"]),
     ("start_acq",      ["开始采集", "开始数据采集", "开始测量"]),
     ("stop_acq",       ["停止采集", "停采集", "停止测量"]),
-    ("pause_run",      ["暂停"]),
     ("eq_column",      ["平衡色谱柱", "平衡柱", "平衡"]),
     ("wash_needle",    ["洗针"]),
     ("purge_bubble",   ["排气泡", "排气管"]),
@@ -90,20 +96,16 @@ INTENTS = [
     ("load_program",   ["载入梯度程序", "载入程序", "载入梯度"]),
     ("emergency_stop", ["急停", "紧急停止"]),
     ("cancel_op",      ["取消刚才", "取消操作", "取消"]),
-    ("help_gradient",  ["怎么设置梯度", "如何设置梯度"]),
-    ("help_flow_max",  ["流速最大", "最大流速"]),
-    ("help_amount",    ["进样量默认", "默认进样量"]),
-    ("help_bubble",    ["怎么排气泡", "如何排气泡", "怎么排空气"]),
 ]
 # 参数设置类带槽位（顺序敏感：长模板在前，set_temp 排除"柱温箱"避免抢配）
 PARAM_INTENTS = [
-    ("set_temp2",      r"(把柱温箱温度设到|柱温箱温度设到|柱温箱温度调到)([0-9.]+)(摄氏度|度)", "temp"),
-    ("set_flow",       r"(流速|流量).{0,3}(设为|设置为|调到|设到|调至|设个|要到)?([0-9.]+)毫升每分钟", "flow"),
-    ("set_temp",       r"柱温(?!箱).{0,3}(设为|设置为|调到|设到|调至)?([0-9.]+)(度|摄氏度)", "temp"),
-    ("set_wavelength", r"(检测波长|波长).{0,3}(设为|设置为|调到|设到|调至)?([0-9.]+)纳米", "wavelength"),
-    ("set_amount",     r"进样量.{0,3}(设为|设置为|调到|设到|调至)?([0-9.]+)微升", "amount_ul"),
-    ("set_pressure",   r"压力上限.{0,3}(设为|设置为|调到|设到|调至)?([0-9.]+)兆帕", "pressure_mpa"),
-    ("set_current",    r"抑制器电流.{0,3}(设为|设置为|调到|设到|调至)?([0-9.]+)毫安", "current_ma"),
+    ("set_temp2",      r"(?:把柱温箱温度设到|柱温箱温度设到|柱温箱温度调到)(?P<value>[0-9.]+)(?:摄氏度|度)", "temp"),
+    ("set_flow",       r"(?:流速|流量).{0,6}?(?:设为|设置为|调到|设到|调至|设个|要到)?(?P<value>[0-9.]+)毫升每分钟", "flow"),
+    ("set_temp",       r"柱温(?!箱).{0,6}?(?:设为|设置为|调到|设到|调至)?(?P<value>[0-9.]+)(?:度|摄氏度)", "temp"),
+    ("set_wavelength", r"(?:检测波长|波长).{0,6}?(?:设为|设置为|调到|设到|调至)?(?P<value>[0-9.]+)纳米", "wavelength"),
+    ("set_amount",     r"进样量.{0,6}?(?:设为|设置为|调到|设到|调至)?(?P<value>[0-9.]+)微升", "amount_ul"),
+    ("set_pressure",   r"压力上限.{0,6}?(?:设为|设置为|调到|设到|调至)?(?P<value>[0-9.]+)兆帕", "pressure_mpa"),
+    ("set_current",    r"抑制器电流.{0,6}?(?:设为|设置为|调到|设到|调至)?(?P<value>[0-9.]+)毫安", "current_ma"),
 ]
 
 def parse_intent(text):
@@ -113,8 +115,7 @@ def parse_intent(text):
     for name, pat, slot in PARAM_INTENTS:
         m = re.search(pat, t)
         if m:
-            groups = m.groups()
-            val = next((g for g in groups if g and re.fullmatch(r"[0-9.]+", g)), None)
+            val = m.group("value")
             return {"intent": name, "slots": {slot: float(val) if val else None},
                     "text": text, "source": "rule"}
     # 2) 关键词意图

@@ -10,7 +10,7 @@ from funasr import AutoModel
 
 MODEL = "iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch"
 
-# 热词表：config/hotwords_funasr.txt（空格分隔短语，78词，按FunASR最佳实践设计）
+# 热词表：config/hotwords_funasr.txt（空格分隔短语，109条，按FunASR最佳实践设计）
 _HW_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "config", "hotwords_funasr.txt")
 HOTWORDS = open(_HW_PATH, encoding="utf-8").read().strip()
 
@@ -20,6 +20,8 @@ def load_model(hotwords: str = HOTWORDS):
         vad_model="iic/speech_fsmn_vad_zh-cn-16k-common-pytorch",
         hotword=hotwords,
         device="cuda:0",
+        disable_update=True,
+        disable_pbar=True,
     )
 
 def test_wav(path):

@@ -1,0 +1,94 @@
+schema_version: instrument-action-plan.v1
+protocol:
+  device: PIC-10
+  transport: rs232
+  baudrate: 9600
+  parity: none
+  data_bits: 8
+  stop_bits: 1
+  default_slave_address: 0x11
+  read_function: 0x03
+  write_function: 0x06
+  checksum: lrc8
+  verify_on_hardware: true
+
+registers:
+  pump_flow:
+    address: 0x2120
+    access: rw
+    encoding: uint16_x100_ml_min
+    range: configured_instrument_limit
+  pump_max_pressure:
+    address: 0x2121
+    access: rw
+    encoding: uint16_x10_mpa
+  pump_start_stop:
+    address: 0x2125
+    access: rw
+    encoding: bool_x
+  pump_pressure:
+    address: 0x2128
+    access: r
+    encoding: uint32_x100_mpa
+  conductivity_current:
+    address: 0x2102
+    access: rw
+    encoding: uint16_ma
+  detector_temperature:
+    address: 0x2115
+    access: r
+    encoding: uint32_x1000_celsius
+  autosampler_status:
+    address: 0x4101
+    access: rw
+    encoding: autosampler_status
+  autosampler_position:
+    address: 0x4115
+    access: rw
+    encoding: autosampler_position
+  autosampler_inject:
+    address: 0x4116
+    access: w
+    encoding: inject_command
+  autosampler_needle:
+    address: 0x4117
+    access: w
+    encoding: needle_command
+
+actions:
+  set_flow:
+    status: ready
+    sequence: [write:pump_flow, read:pump_flow]
+  set_pressure_limit:
+    status: ready
+    sequence: [write:pump_max_pressure, read:pump_max_pressure]
+  pump_start:
+    status: ready
+    sequence: [write:pump_start_stop, read:pump_start_stop]
+  pump_stop:
+    status: ready
+    sequence: [write:pump_start_stop, read:pump_start_stop]
+  query_pressure:
+    status: ready
+    sequence: [read:pump_pressure]
+  query_flow:
+    status: ready
+    sequence: [read:pump_flow]
+  start_inject:
+    status: needs_precondition
+    sequence: [read:autosampler_position, write:autosampler_position, poll:autosampler_position, write:autosampler_needle, write:autosampler_inject]
+  stop_inject:
+    status: ready
+    sequence: [write:autosampler_inject, read:autosampler_status]
+  emergency_stop:
+    status: needs_policy
+    sequence: [stop_inject, write:autosampler_status, write:pump_start_stop, read:autosampler_status, read:pump_start_stop]
+  start_acquisition:
+    status: needs_clarification
+    reason: detector selection and module combination must be supplied by the instrument configuration
+  set_temperature:
+    status: unsupported
+    reason: no column-temperature write register in the supplied protocol
+  set_wavelength:
+    status: unsupported
+    reason: 0x3102 is voltage, not wavelength

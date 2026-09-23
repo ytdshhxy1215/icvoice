@@ -1,0 +1,214 @@
+{
+  "description": "真实音频 ASR -> 动作规划 -> PIC-10 模拟寄存器执行",
+  "instrument": "PIC-10",
+  "samples": [
+    {
+      "file": "冰糖_set_flow_a_0.wav",
+      "reference": "流速设为三毫升每分钟",
+      "hypothesis": "流 速 设 为 三 毫 升 每 分 钟",
+      "intent": "set_flow",
+      "plan_status": "needs_configuration",
+      "action_count": 2,
+      "executed": true,
+      "execution_error": null,
+      "asr_seconds": 3.23,
+      "warnings": [
+        "协议未给出泵流量安全上限，执行前需加载仪器配置"
+      ]
+    },
+    {
+      "file": "冰糖_set_press_a_0.wav",
+      "reference": "压力上限设为三十兆帕",
+      "hypothesis": "压 力 上 限 设 为 三 十 兆 帕",
+      "intent": "set_pressure",
+      "plan_status": "needs_configuration",
+      "action_count": 2,
+      "executed": true,
+      "execution_error": null,
+      "asr_seconds": 0.184,
+      "warnings": [
+        "协议未给出泵压力安全上限，执行前需加载仪器配置"
+      ]
+    },
+    {
+      "file": "冰糖_qry_pressure.wav",
+      "reference": "现在压力多少",
+      "hypothesis": "现 在 压 力 多 少",
+      "intent": "query_pressure",
+      "plan_status": "ready",
+      "action_count": 1,
+      "executed": true,
+      "execution_error": null,
+      "asr_seconds": 0.135,
+      "warnings": []
+    },
+    {
+      "file": "白桦_qry_flow_now.wav",
+      "reference": "当前流速是多少",
+      "hypothesis": "当 前 流 速 是 多 少",
+      "intent": "query_flow",
+      "plan_status": "ready",
+      "action_count": 1,
+      "executed": true,
+      "execution_error": null,
+      "asr_seconds": 0.167,
+      "warnings": []
+    },
+    {
+      "file": "白桦_ctl_start_inject.wav",
+      "reference": "开始进样",
+      "hypothesis": "开 始 进 样",
+      "intent": "start_inject",
+      "plan_status": "needs_precondition",
+      "action_count": 4,
+      "executed": true,
+      "execution_error": null,
+      "asr_seconds": 0.117,
+      "warnings": [
+        "目标瓶号必须在执行前由上位机状态或用户明确提供"
+      ]
+    },
+    {
+      "file": "苏打_ctl_stop_run.wav",
+      "reference": "停止运行",
+      "hypothesis": "停 止 运 行",
+      "intent": "stop_run",
+      "plan_status": "ready",
+      "action_count": 6,
+      "executed": true,
+      "execution_error": null,
+      "asr_seconds": 0.141,
+      "warnings": [
+        "急停动作必须由现场安全策略确认是否同时停止全部模块"
+      ]
+    },
+    {
+      "file": "冰糖_ctl_start_acq.wav",
+      "reference": "开始数据采集",
+      "hypothesis": "开 始 数 据 采 集",
+      "intent": "start_acq",
+      "plan_status": "unsupported",
+      "action_count": 0,
+      "executed": false,
+      "execution_error": null,
+      "asr_seconds": 0.134,
+      "warnings": [
+        "当前协议动作注册表没有该意图的确定映射"
+      ]
+    },
+    {
+      "file": "白桦_set_curr_a_0.wav",
+      "reference": "抑制器电流设为五十毫安",
+      "hypothesis": "抑 制 器 电 流 设 为 五 十 毫 安",
+      "intent": "set_current",
+      "plan_status": "needs_clarification",
+      "action_count": 0,
+      "executed": false,
+      "execution_error": null,
+      "asr_seconds": 0.156,
+      "warnings": [
+        "协议同时存在电导电流和淋洗液发生器电流，需明确目标模块"
+      ]
+    }
+  ],
+  "summary": {
+    "total": 8,
+    "plans_with_actions": 6,
+    "executed_and_verified": 6,
+    "simulator_events": 16
+  },
+  "simulator_final_registers": {
+    "0x2100": 0,
+    "0x2120": 300,
+    "0x2121": 300,
+    "0x2125": 0,
+    "0x2128": 1234,
+    "0x3100": 0,
+    "0x4101": 0,
+    "0x4115": 57344,
+    "0x4116": 0,
+    "0x4117": 1
+  },
+  "simulator_events": [
+    {
+      "op": "write",
+      "register": "0x2120",
+      "value": 300
+    },
+    {
+      "op": "read",
+      "register": "0x2120",
+      "value": 300
+    },
+    {
+      "op": "write",
+      "register": "0x2121",
+      "value": 300
+    },
+    {
+      "op": "read",
+      "register": "0x2121",
+      "value": 300
+    },
+    {
+      "op": "read",
+      "register": "0x2128",
+      "value": 1234
+    },
+    {
+      "op": "read",
+      "register": "0x2120",
+      "value": 300
+    },
+    {
+      "op": "read",
+      "register": "0x4115",
+      "value": 57344
+    },
+    {
+      "op": "read",
+      "register": "0x4115",
+      "value": 57344
+    },
+    {
+      "op": "write",
+      "register": "0x4117",
+      "value": 1
+    },
+    {
+      "op": "write",
+      "register": "0x4116",
+      "value": 80
+    },
+    {
+      "op": "write",
+      "register": "0x4116",
+      "value": 0
+    },
+    {
+      "op": "write",
+      "register": "0x4101",
+      "value": 0
+    },
+    {
+      "op": "write",
+      "register": "0x3100",
+      "value": 0
+    },
+    {
+      "op": "write",
+      "register": "0x2125",
+      "value": 0
+    },
+    {
+      "op": "read",
+      "register": "0x4101",
+      "value": 0
+    },
+    {
+      "op": "read",
+      "register": "0x2125",
+      "value": 0
+    }
+  ]
+}
